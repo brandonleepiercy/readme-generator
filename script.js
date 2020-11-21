@@ -4,7 +4,7 @@ const util = require('util');
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const promptUser=()=>
+const promptUser= () =>
     inquirer.prompt([
         {
             type:'input',
@@ -28,9 +28,45 @@ const promptUser=()=>
         },
         {
             type:'input',
-            name:'License',
+            name:'credits',
+            message:'Who worked on this project?:',
+        },
+        {
+            type:'input',
+            name:'license',
             message:'What type of license? :'
         },
-    ]).then((answers) => console.log(answers));
+    ]);
 
-    promptUser();
+    const genReadme = (answers) => 
+        `# ${answers.title}
+
+        ## Description
+        
+        ${answers.description}
+        
+        ## Table of Contents
+        
+        - [Installation](#installation)
+        - [Usage](#usage)
+        - [Credits](#credits)
+        - [License](#license)
+        
+        ## Installation
+        
+        Run function ``${answers.installation}`` to install the neccesary packages for this repository.
+        
+        ## Usage
+        
+        ${answers.usage}
+        
+        ## Credits
+        
+        ${answers.credits}
+        
+        ## License
+        
+        ${answers.license}`
+
+    promptUser()
+        .then((answers) => console.log(answers));
