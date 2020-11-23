@@ -1,0 +1,29 @@
+{
+  "name": "readme-generator",
+  "version": "1.0.0",
+  "description": "helps create a readme file based on user inputs into a CLI",
+  "main": "script.js",
+  "dependencies": {
+    "fs": "^0.0.1-security",
+    "inquirer": "^7.3.3",
+    "util": "^0.12.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "skyline"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brandonleepiercy/readme-generator.git"
+  },
+  "keywords": [
+    "readme",
+    "generator"
+  ],
+  "author": "brandon lee piercy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brandonleepiercy/readme-generator/issues"
+  },
+  "homepage": "https://github.com/brandonleepiercy/readme-generator#readme"
+}
