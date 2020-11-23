@@ -39,34 +39,36 @@ const promptUser= () =>
     ]);
 
     const genReadme = (answers) => 
-        `# ${answers.title}
+    `# ${answers.title}
 
-        ## Description
-        
-        ${answers.description}
-        
-        ## Table of Contents
-        
-        - [Installation](#installation)
-        - [Usage](#usage)
-        - [Credits](#credits)
-        - [License](#license)
-        
-        ## Installation
-        
-        Run function ``${answers.installation}`` to install the neccesary packages for this repository.
-        
-        ## Usage
-        
-        ${answers.usage}
-        
-        ## Credits
-        
-        ${answers.credits}
-        
-        ## License
-        
-        ${answers.license}`
+## Description
+
+${answers.description}
+
+## Table of Contents
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+
+## Installation
+
+Type "${answers.installation}" into CMD to install the neccesary packages for this repository.
+
+## Usage
+
+${answers.usage}
+
+## Credits
+
+${answers.credits}
+
+## License
+
+${answers.license}`
 
     promptUser()
-        .then((answers) => console.log(answers));
+        .then((answers) => writeFileAsync('README.md', genReadme(answers)))
+        .then(() => console.log('Successfully wrote to index.html'))
+        .catch((err) => console.error(err));
