@@ -9,12 +9,12 @@ const promptUser= () =>
         {
             type:'input',
             name:'title',
-            message:'Enter your project title:',
+            message:'Enter the project title:',
         },
         {
             type:'input',
             name:'description',
-            message:'Enter a description of your project:',
+            message:'Enter a description of the project:',
         },
         {
             type:'input',
@@ -24,7 +24,7 @@ const promptUser= () =>
         {
             type:'input',
             name:'usage',
-            message:'What is your project used for? :',
+            message:'What is the project used for? :',
         },
         {
             type:'input',
@@ -36,6 +36,21 @@ const promptUser= () =>
             name:'license',
             message:'What type of license? :'
         },
+        {
+            type:'input',
+            name:'tests',
+            message:'Describe any tests written for this application: '
+        },
+        {
+            type:'input',
+            name:'email',
+            message:'Enter your email: '
+        },
+        {
+            type:'input',
+            name:'username',
+            message:'Enter your Github username: '
+        }
     ]);
 
     const genReadme = (answers) => 
@@ -51,6 +66,8 @@ ${answers.description}
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
@@ -66,7 +83,16 @@ ${answers.credits}
 
 ## License
 
-${answers.license}`
+${answers.license}
+
+## Tests
+
+${answers.tests}
+
+## Questions
+
+You can contact me at ${answers.email} in case you have any questions or concerns about this repository.
+You may also reach me or browse my other repositories at my [Github Profile](https://github.com/${answers.username})`
 
     promptUser()
         .then((answers) => writeFileAsync('README.md', genReadme(answers)))
