@@ -66,7 +66,7 @@ const promptUser= () =>
 
 const genReadme = (answers) => `
 # ${answers.title}
-${badges.MIT}
+${badges[answers.license]}
 ## Description
 
 ${answers.description}

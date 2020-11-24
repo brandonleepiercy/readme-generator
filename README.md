@@ -1,9 +1,9 @@
 
-# title
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Title
+[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 ## Description
 
-desc
+Desc
 
 ## Table of Contents
 
@@ -16,23 +16,23 @@ desc
 
 ## Installation
 
-Type "install" into CMD to install the neccesary packages for this repository.
+Type "Install Packages." into CMD to install the neccesary packages for this repository.
 
 ## Usage
 
-readmes
+Generating Readmes.
 
 ## Credits
 
-me
+Me.
 
 ## License
 
-MIT
+GPLv3
 
 ## Tests
 
-bon test
+NPM test
 
 ## Questions
 
