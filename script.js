@@ -109,5 +109,5 @@ You may also reach me or browse my other repositories at my [Github Profile](htt
 
 promptUser()
     .then((answers) => writeFileAsync('README.md', genReadme(answers)))
-    .then(() => console.log('Successfully wrote to index.html'))
+    .then(() => console.log('Successfully wrote README.md'))
     .catch((err) => console.error(err));
