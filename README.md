@@ -1,8 +1,9 @@
-# Readme Generator
 
+# title
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 
-This repository contains a script.js file which can be run using node via the user's terminal. The file contains a set of inquirer prompts which are used to help the user generate a pre-formatted readme file containing information that the user inputs via the CLI in response to inquirer prompts. The repository also contains the license for use and modification as well as the package-lock.json files describing the required node modules.
+desc
 
 ## Table of Contents
 
@@ -10,19 +11,30 @@ This repository contains a script.js file which can be run using node via the us
 - [Usage](#usage)
 - [Credits](#credits)
 - [License](#license)
+- [Tests](#tests)
+- [Questions](#questions)
 
 ## Installation
 
-Type "npm install" into CMD to install the neccesary packages for this repository.
+Type "install" into CMD to install the neccesary packages for this repository.
 
 ## Usage
 
-Quickly creating a standardized, professional readme for different projects.
+readmes
 
 ## Credits
 
-Brandon Lee Piercy
+me
 
 ## License
 
 MIT
+
+## Tests
+
+bon test
+
+## Questions
+
+You can contact me at b.piercy567@gmail.com in case you have any questions or concerns about this repository.
+You may also reach me or browse my other repositories at my [Github Profile](https://github.com/brandonleepiercy)
