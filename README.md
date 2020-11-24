@@ -22,6 +22,8 @@ Type "npm install" into CMD to install the neccesary packages for this repositor
 
 Generating professional readmes quickly.
 
+[Instructional Video](https://www.youtube.com/watch?v=tKxd32eAGvM&feature=youtu.be)
+
 ## Credits
 
 Brandon Lee Piercy
