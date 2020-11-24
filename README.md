@@ -1,9 +1,9 @@
 
-# Title
-[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
+# Readme Generator
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 ## Description
 
-Desc
+This repo contains a script.js file along with the relevant package.json file with the list of modules required to run the script file in node. The script file utilizes inquire to retrieve user inputs to generate a pre-formatted, and professional readme. The script also auto applies a badge for the license at the top of the readme. Everything is handled within the user's terminal.
 
 ## Table of Contents
 
@@ -16,23 +16,23 @@ Desc
 
 ## Installation
 
-Type "Install Packages." into CMD to install the neccesary packages for this repository.
+Type "npm install" into CMD to install the neccesary packages for this repository.
 
 ## Usage
 
-Generating Readmes.
+Generating professional readmes quickly.
 
 ## Credits
 
-Me.
+Brandon Lee Piercy
 
 ## License
 
-GPLv3
+MIT
 
 ## Tests
 
-NPM test
+npm test
 
 ## Questions
 
